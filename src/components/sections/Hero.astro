@@ -50,8 +50,7 @@ const SOCIAL_ICONS: Record<string, any> = {
                     )
                 }
                 {
-                    profiles.map(({network, url, username}) => {
-                        //const { network, url, username } = profile;
+                    profiles.map(({network, url}) => {
                         const Icon = SOCIAL_ICONS[network];
                         return (
                             <a href={url}

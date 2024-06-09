@@ -5,7 +5,7 @@ import {work} from '@cv'
 
 <Section title="Experience">
     <ul>
-        {work.map(({name, position, startDate, endDate, summary, highlights}) => {
+        {work.map(({name, position, startDate, endDate, summary}) => {
             const startyear = new Date(startDate).getFullYear();
             const endyear = endDate !== null && endDate !== "" ?  new Date(endDate).getFullYear() : 'Today';
             const years = `${startyear} - ${endyear}`;
