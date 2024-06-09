@@ -1,0 +1,337 @@
+{
+    "basics": {
+      "name": "Max Houston",
+      "label": "Backend developer with more than 5 years of experience in business solutions and automation of administrative solutions.",
+      "image": "/me.webp",
+      "email": "maxr524@gmail.com",
+      "phone": "+r51 980687918",
+      "url": "https://soyhouston256.com",
+      "summary": "Backend developer with more than 5 years of experience in business solutions and automation of administrative solutions. currently leading a team of 5 people in a project for a financial services.",
+      "location": {
+        "address": "Av. Salaverry 256",
+        "postalCode": "234235",
+        "city": "San Isidro",
+        "countryCode": "PE",
+        "region": "Lima"
+      },
+       "profiles": [
+        {
+            "network": "X",
+            "username": "soyhouston256",
+            "url": "https://x.com/soyhouston256"
+        },
+        {
+            "network": "GitHub",
+            "username": "soyhouston256",
+            "url": "https://github.com/soyHouston256"
+        },
+        {
+            "network": "LinkedIn",
+            "username": "soyhouston256",
+            "url": "https://www.linkedin.com/in/soyhouston256/"
+        }
+        ]
+    },
+    "work": [
+      {
+      "name": "YAPE",
+      "position": " Backend Developer",
+      "url": "https://company.com",
+      "startDate": "2022-01-01",
+      "endDate": "",
+      "summary": "Implemented grafana in all microservices of my team, Implemented discount coupon and gained 20% more revenue.",
+      "highlights": [
+        "Started the company"
+      ]
+      },
+      {
+        "name": "TISMART SAC",
+        "position": " Backend Developer",
+        "url": "https://company.com",
+        "startDate": "2021-01-01",
+        "endDate": "2022-01-01",
+        "summary": "Improved the tracking module and reduced the types of tracking by 30%, Implemented a new framework for creating tracking codes and generating unique codes on all platforms, Played an active role in the deployment of the complete platform migration from OpenShift to EKS to accelerate the development and test by 20%, Coached a new member of the team and launched a mentorship program.",
+        "highlights": [
+          "Started the company"
+        ]
+      },
+      {
+        "name": "RAPPI SAC",
+        "position": " Backend Developer",
+        "url": "https://company.com",
+        "startDate": "2018-01-01",
+        "endDate": "2021-01-01",
+        "summary": "Generated new test cases in the microservices and increased the coverage by 30%, Managed to make the standardization implementations between the different areas for units measures and reduce conflict in 12%, Improved the look and feel of the notifications emails and reduced in 20% send to spam of these emails by 20%.",
+        "highlights": [
+          "Started the company"
+        ]
+      },
+      {
+        "name": "MAKEASY SRL",
+        "position": " Backend Developer",
+        "url": "https://company.com",
+        "startDate": "2016-01-01",
+        "endDate": "2017-01-01",
+        "summary": "Coordinated and developed and launched the new version of the SAAS platform and improved the revenue by 50%, Migrated the API of service of PHP to Golang, this process performed by using agile methodologies. As a result, increment the response speed by 40%, Analyzed user needs and software requirements to determine feasibility of project, ensuring project completion 1 month prior to targeted due date, Collaborated on APIs and managed software workflow using  Scrum methodology, increasing task success rate by 25%.",
+        "highlights": [
+          "Started the company"
+        ]
+      }
+    ],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [
+      {
+        "institution": "University National Hermilio Valdizan", 
+        "url": "https://www.unheval.edu.pe",
+        "area": "System Engineering",
+        "studyType": "Bachelor",
+        "startDate": "2010-04-01",
+        "endDate": "2016-06-30",
+        "score": "4.0",
+        "courses": [
+          "DB1101 - Basic SQL"
+        ]
+      },
+      {
+        "institution": "University National Mayor of San Marcos", 
+        "url": "https://unmsm.edu.pe",
+        "area": "Software engineering",
+        "studyType": "Master",
+        "startDate": "2021-01-01",
+        "endDate": "2022-12-31",
+        "score": "4.0",
+        "courses": [
+          "DB1101 - Basic SQL"
+        ]
+      }
+    ],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [
+      {
+        "name": "html",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend"
+        ]
+      },
+      {
+        "name": "css",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Responsive design",
+          "Frontend"
+        ]
+      },
+      {
+        "name": "javascript",
+        "level": "Expert",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Backend"
+        ]
+      },
+      {
+        "name": "nodejs",
+        "level": "Expert",
+        "keywords": [
+          "Backend development",
+          "JavaScript runtime",
+          "API development"
+        ]
+      },
+      {
+        "name": "express",
+        "level": "Advanced",
+        "keywords": [
+          "Web framework",
+          "Node.js",
+          "Backend development"
+        ]
+      },
+      {
+        "name": "mongodb",
+        "level": "Advanced",
+        "keywords": [
+          "Database",
+          "NoSQL",
+          "Backend"
+        ]
+      },
+      {
+        "name": "aws",
+        "level": "Expert",
+        "keywords": [
+          "Cloud computing",
+          "DevOps",
+          "Scalability"
+        ]
+      },
+      {
+        "name": "docker",
+        "level": "Advanced",
+        "keywords": [
+          "Containerization",
+          "DevOps",
+          "Deployment"
+        ]
+      },
+      {
+        "name": "kubernetes",
+        "level": "Intermediate",
+        "keywords": [
+          "Container orchestration",
+          "DevOps",
+          "Scalability"
+        ]
+      },
+      {
+        "name": "git",
+        "level": "Expert",
+        "keywords": [
+          "Version control",
+          "Collaboration",
+          "Source code management"
+        ]
+      },
+      {
+        "name": "graphql",
+        "level": "Intermediate",
+        "keywords": [
+          "API development",
+          "Data fetching",
+          "Backend"
+        ]
+      },
+      {
+        "name": "typescript",
+        "level": "Advanced",
+        "keywords": [
+          "JavaScript superset",
+          "Type safety",
+          "Frontend",
+          "Backend"
+        ]
+      },
+      {
+        "name": "python",
+        "level": "Advanced",
+        "keywords": [
+          "Scripting",
+          "Backend development",
+          "Data science"
+        ]
+      },
+      {
+        "name": "sql",
+        "level": "Expert",
+        "keywords": [
+          "Database",
+          "Data querying",
+          "Backend"
+        ]
+      },
+      {
+        "name": "linux",
+        "level": "Advanced",
+        "keywords": [
+          "Operating system",
+          "Server management",
+          "DevOps"
+        ]
+      },
+      {
+        "name": "rest",
+        "level": "Expert",
+        "keywords": [
+          "API development",
+          "Web services",
+          "Backend"
+        ]
+      }
+    ],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [
+      {
+      "name": "Sibi",
+      "isActive": true,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Sibi.pe is a digital platform designed to help small businesses in Peru manage their invoicing and sales processes more efficiently. It offers an application that allows users to create and manage electronic invoices and receipts quickly and easily. Here are some of its key features.",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/",
+      "github": "github.com/soyhouston256/sibi"
+    },
+    {
+      "name": "Makeasy",
+      "isActive": false,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Makeasy S.R.L. is a Peruvian company specializing in software development and digital solutions. The company has been recognized by SUNAT (Peru's tax authority) as a good contributor and is registered with the National Registry of Suppliers, which allows it to engage in contracts with the Peruvian government​.",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/",
+      "github": "github.com/soyhouston256/makeasy"
+
+    },
+    {
+      "name": "EasyJobs",
+      "isActive": true,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "EasyJobs is a software-as-a-service (SaaS) platform designed to streamline the hiring process for companies, offering features such as candidate profile creation, in-app messaging, and advanced applicant tracking and filtering. The platform is aimed at simplifying recruitment through tools like automatic resume parsing.",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/",
+      "github": "github.com/soyhouston256/easyjobs"
+    }
+  ]
+  }

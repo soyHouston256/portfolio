@@ -1,0 +1,25 @@
+---
+import Section from "../Section.astro";
+import { basics } from "@cv";
+
+const { summary }  = basics;
+---
+<Section>
+    <h2>About</h2>
+    <p>{ summary }</p>
+</Section>
+
+<style>
+    h2 {
+        margin: 0;
+        color: black;
+    }
+    p {
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0;
+        text-wrap: pretty;
+    }
+</style>
+

@@ -1,0 +1,96 @@
+---
+import Section from "../Section.astro";
+import { projects } from "@cv";
+---
+
+<Section title="Experience">
+    <ul>
+        {
+            projects.map(({name, description, url, highlights, github, isActive}) => 
+                {
+                    return (
+                    <li>
+                        <article>
+                            <header>
+                                <h3>
+                                <a href={url} title={`see the porject ${name}`} target="_blank">
+                                    {name}
+                                </a>
+                                {
+                                    isActive && <span>&bull;</span>
+                                }
+                                </h3>
+                                <p>{description}</p>
+                            </header>
+                            <footer>
+                                    {
+                                        highlights.map((highlight) => (
+                                            <span>{highlight}</span>
+                                        ))
+                                    }
+                            </footer>
+                        </article>
+                    </li>
+                )}
+            )
+        }
+    </ul>
+
+</Section>
+
+<style>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #111;
+    }
+    article a {
+        text-decoration: none;
+        color: #111;
+    }
+    article a:hover {
+        text-decoration: underline;
+    }
+    article p {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        color: #333;
+        margin-bottom: 4px;
+    }
+    article {
+        border-radius: 8px;
+        border: 1px solid #eee;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        height: 100%;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.6rem;
+        gap: 4px;
+    }
+
+    article header h3 {
+        flex: 1;
+    }
+    article h3 span {
+        color: rgb(0, 188, 44);
+    }
+    footer span {
+        border-radius: 6px;
+        background-color: #000;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 500;
+        list-style: none;
+        padding: 0.2rem 0.6rem;
+    }
+</style>
