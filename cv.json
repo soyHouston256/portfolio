@@ -1,7 +1,7 @@
 {
     "basics": {
       "name": "Max Houston",
-      "label": "Backend developer with more than 5 years of experience in business solutions and automation of administrative solutions.",
+      "label": "Backend developer with more than 7 years of experience in business solutions.",
       "image": "/portfolio/me.webp",
       "email": "maxr524@gmail.com",
       "phone": "+r51 980687918",
@@ -37,20 +37,20 @@
       "name": "YAPE",
       "position": " Backend Developer",
       "url": "https://company.com",
-      "startDate": "2022-01-01",
+      "startDate": "2023-11-15",
       "endDate": "",
       "summary": "Implemented grafana in all microservices of my team, Implemented discount coupon and gained 20% more revenue.",
       "highlights": [
-        "Started the company"
+        "kafka"
       ]
       },
       {
         "name": "TISMART SAC",
         "position": " Backend Developer",
         "url": "https://company.com",
-        "startDate": "2021-01-01",
-        "endDate": "2022-01-01",
-        "summary": "Improved the tracking module and reduced the types of tracking by 30%, Implemented a new framework for creating tracking codes and generating unique codes on all platforms, Played an active role in the deployment of the complete platform migration from OpenShift to EKS to accelerate the development and test by 20%, Coached a new member of the team and launched a mentorship program.",
+        "startDate": "2022-04-01",
+        "endDate": "2023-10-31",
+        "summary": "Improved the tracking module and reduced the types of tracking by 30%. Implemented a new framework for creating tracking codes and generating unique codes on all platforms. Played an active role in the deployment of the complete platform migration from OpenShift to EKS to accelerate the development and test by 20%. Coached a new member of the team and launched a mentorship program.",
         "highlights": [
           "Started the company"
         ]
@@ -59,9 +59,9 @@
         "name": "RAPPI SAC",
         "position": " Backend Developer",
         "url": "https://company.com",
-        "startDate": "2018-01-01",
-        "endDate": "2021-01-01",
-        "summary": "Generated new test cases in the microservices and increased the coverage by 30%, Managed to make the standardization implementations between the different areas for units measures and reduce conflict in 12%, Improved the look and feel of the notifications emails and reduced in 20% send to spam of these emails by 20%.",
+        "startDate": "2021-02-01",
+        "endDate": "2022-01-01",
+        "summary": "Generated new test cases in the microservices and increased the coverage by 30%, managed to make the standardization implementations between the different areas for units measures and reduce conflict by 12%, and improved the look and feel of the notification emails, reducing their likelihood of being marked as spam by 20%.",
         "highlights": [
           "Started the company"
         ]
@@ -72,7 +72,7 @@
         "url": "https://company.com",
         "startDate": "2016-01-01",
         "endDate": "2017-01-01",
-        "summary": "Coordinated and developed and launched the new version of the SAAS platform and improved the revenue by 50%, Migrated the API of service of PHP to Golang, this process performed by using agile methodologies. As a result, increment the response speed by 40%, Analyzed user needs and software requirements to determine feasibility of project, ensuring project completion 1 month prior to targeted due date, Collaborated on APIs and managed software workflow using  Scrum methodology, increasing task success rate by 25%.",
+        "summary": "Coordinated, developed, and launched the new version of the SAAS platform, improving revenue by 50%; migrated the API service from PHP to Golang using agile methodologies, increasing response speed by 40%; analyzed user needs and software requirements to ensure project feasibility and completed the project one month ahead of schedule; and collaborated on APIs and managed software workflow using Scrum methodology, increasing task success rate by 25%.",
         "highlights": [
           "Started the company"
         ]
