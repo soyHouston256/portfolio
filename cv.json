@@ -6,7 +6,7 @@
       "email": "maxr524@gmail.com",
       "phone": "+r51 980687918",
       "url": "https://soyhouston256.com",
-      "summary": "Backend developer with more than 5 years of experience in business solutions and automation of administrative solutions. currently leading a team of 5 people in a project for a financial services.",
+      "summary": "Backend developer with more than 7 years of experience in business solutions and automation of administrative solutions. currently leading a team of 5 people in a project for a financial services.",
       "location": {
         "address": "Av. Salaverry 256",
         "postalCode": "234235",
@@ -36,7 +36,7 @@
       {
       "name": "YAPE",
       "position": " Backend Developer",
-      "url": "https://company.com",
+      "url": "https://www.yape.com.pe",
       "startDate": "2023-11-15",
       "endDate": "",
       "summary": "Implemented grafana in all microservices of my team, Implemented discount coupon and gained 20% more revenue.",
@@ -47,7 +47,7 @@
       {
         "name": "TISMART SAC",
         "position": " Backend Developer",
-        "url": "https://company.com",
+        "url": "https://www.tismart.com",
         "startDate": "2022-04-01",
         "endDate": "2023-10-31",
         "summary": "Improved the tracking module and reduced the types of tracking by 30%. Implemented a new framework for creating tracking codes and generating unique codes on all platforms. Played an active role in the deployment of the complete platform migration from OpenShift to EKS to accelerate the development and test by 20%. Coached a new member of the team and launched a mentorship program.",
@@ -58,7 +58,7 @@
       {
         "name": "RAPPI SAC",
         "position": " Backend Developer",
-        "url": "https://company.com",
+        "url": "https://www.rappi.com.pe",
         "startDate": "2021-02-01",
         "endDate": "2022-01-01",
         "summary": "Generated new test cases in the microservices and increased the coverage by 30%, managed to make the standardization implementations between the different areas for units measures and reduce conflict by 12%, and improved the look and feel of the notification emails, reducing their likelihood of being marked as spam by 20%.",
@@ -69,7 +69,7 @@
       {
         "name": "MAKEASY SRL",
         "position": " Backend Developer",
-        "url": "https://company.com",
+        "url": "https://sibi.pe",
         "startDate": "2016-01-01",
         "endDate": "2017-01-01",
         "summary": "Coordinated, developed, and launched the new version of the SAAS platform, improving revenue by 50%; migrated the API service from PHP to Golang using agile methodologies, increasing response speed by 40%; analyzed user needs and software requirements to ensure project feasibility and completed the project one month ahead of schedule; and collaborated on APIs and managed software workflow using Scrum methodology, increasing task success rate by 25%.",
@@ -109,6 +109,18 @@
         "studyType": "Master",
         "startDate": "2021-01-01",
         "endDate": "2022-12-31",
+        "score": "4.0",
+        "courses": [
+          "DB1101 - Basic SQL"
+        ]
+      },
+      {
+        "institution": "University of Engineering and Technology - UTEC", 
+        "url": "https://utec.edu.pe",
+        "area": "Data Cience & IA",
+        "studyType": "Master",
+        "startDate": "2024-09-01",
+        "endDate": "2026-12-31",
         "score": "4.0",
         "courses": [
           "DB1101 - Basic SQL"
@@ -278,6 +290,24 @@
           "Web services",
           "Backend"
         ]
+      },
+      {
+        "name": "nestjs",
+        "level": "Expert",
+        "keywords": [
+          "API development",
+          "Web services",
+          "Backend"
+        ]
+      },
+      {
+        "name": "golang",
+        "level": "Expert",
+        "keywords": [
+          "API development",
+          "Web services",
+          "Backend"
+        ]
       }
     ],
     "languages": [{
@@ -303,9 +333,9 @@
       "endDate": "2021-01-01",
       "description": "Sibi.pe is a digital platform designed to help small businesses in Peru manage their invoicing and sales processes more efficiently. It offers an application that allows users to create and manage electronic invoices and receipts quickly and easily. Here are some of its key features.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Won award at UNHEVAL StartUp 2017"
       ],
-      "url": "https://project.com/",
+      "url": "https://sibi.pe",
       "github": "github.com/soyhouston256/sibi"
     },
     {
@@ -328,7 +358,7 @@
       "endDate": "2021-01-01",
       "description": "EasyJobs is a software-as-a-service (SaaS) platform designed to streamline the hiring process for companies, offering features such as candidate profile creation, in-app messaging, and advanced applicant tracking and filtering. The platform is aimed at simplifying recruitment through tools like automatic resume parsing.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Won award at UNHEVAL StartUp 2019"
       ],
       "url": "https://project.com/",
       "github": "github.com/soyhouston256/easyjobs"
