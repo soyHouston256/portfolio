@@ -1,332 +1,326 @@
 {
-    "basics": {
-      "name": "Max Houston",
-      "label": "Backend developer with more than 7 years of experience in business solutions.",
-      "image": "/portfolio/me.webp",
-      "email": "maxr524@gmail.com",
-      "phone": "+r51 980687918",
-      "url": "https://soyhouston256.com",
-      "summary": "Backend developer with more than 7 years of experience in business solutions and automation of administrative solutions. currently leading a team of 5 people in a project for a financial services.",
-      "location": {
-        "address": "Av. Salaverry 256",
-        "postalCode": "234235",
-        "city": "San Isidro",
-        "countryCode": "PE",
-        "region": "Lima"
-      },
-       "profiles": [
-        {
-            "network": "X",
-            "username": "soyhouston256",
-            "url": "https://x.com/soyhouston256"
-        },
-        {
-            "network": "GitHub",
-            "username": "soyhouston256",
-            "url": "https://github.com/soyHouston256"
-        },
-        {
-            "network": "LinkedIn",
-            "username": "soyhouston256",
-            "url": "https://www.linkedin.com/in/soyhouston256/"
-        }
-        ]
+  "basics": {
+    "name": "Max Houston Ramirez Martel",
+    "label": "Backend Developer especializado en Node.js con más de 7 años de experiencia en microservicios y soluciones cloud-native.",
+    "image": "/me.webp",
+    "email": "maxr524@gmail.com",
+    "phone": "+51 980687918",
+    "url": "https://maxflow.ink",
+    "summary": "Backend Developer especializado en Node.js con más de 7 años de experiencia diseñando y desarrollando microservicios escalables, APIs REST/Async y soluciones cloud-native. Experto en arquitecturas distribuidas, patrones empresariales y programación reactiva.",
+    "location": {
+      "city": "Lima",
+      "countryCode": "PE",
+      "region": "Lima"
     },
-    "work": [
+    "profiles": [
       {
-      "name": "YAPE",
-      "position": " Backend Developer",
-      "url": "https://www.yape.com.pe",
-      "startDate": "2023-11-15",
+        "network": "GitHub",
+        "username": "soyHouston256",
+        "url": "https://github.com/soyHouston256"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "soyhouston256",
+        "url": "https://www.linkedin.com/in/soyhouston256/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "SOFTTECK (Rimac)",
+      "position": "Software Engineer",
+      "url": "https://www.rimac.com",
+      "startDate": "2025-10-01",
       "endDate": "",
-      "summary": "Implemented grafana in all microservices of my team, Implemented discount coupon and gained 20% more revenue.",
+      "summary": "Implementé el portal de clientes para venta directa de seguros sin corredores y actualmente implemento el portal de renovaciones automáticas de pólizas, reduciendo el proceso de varios días a minutos.",
       "highlights": [
-        "kafka"
+        "Implementé portal de clientes para venta directa de seguros sin corredores.",
+        "Implementación del portal de renovaciones automáticas de pólizas reduciendo el proceso de días a minutos."
       ]
-      },
-      {
-        "name": "TISMART SAC",
-        "position": " Backend Developer",
-        "url": "https://www.tismart.com",
-        "startDate": "2022-04-01",
-        "endDate": "2023-10-31",
-        "summary": "Improved the tracking module and reduced the types of tracking by 30%. Implemented a new framework for creating tracking codes and generating unique codes on all platforms. Played an active role in the deployment of the complete platform migration from OpenShift to EKS to accelerate the development and test by 20%. Coached a new member of the team and launched a mentorship program.",
-        "highlights": [
-          "Started the company"
-        ]
-      },
-      {
-        "name": "RAPPI SAC",
-        "position": " Backend Developer",
-        "url": "https://www.rappi.com.pe",
-        "startDate": "2021-02-01",
-        "endDate": "2022-01-01",
-        "summary": "Generated new test cases in the microservices and increased the coverage by 30%, managed to make the standardization implementations between the different areas for units measures and reduce conflict by 12%, and improved the look and feel of the notification emails, reducing their likelihood of being marked as spam by 20%.",
-        "highlights": [
-          "Started the company"
-        ]
-      },
-      {
-        "name": "MAKEASY SRL",
-        "position": " Backend Developer",
-        "url": "https://sibi.pe",
-        "startDate": "2016-01-01",
-        "endDate": "2017-01-01",
-        "summary": "Coordinated, developed, and launched the new version of the SAAS platform, improving revenue by 50%; migrated the API service from PHP to Golang using agile methodologies, increasing response speed by 40%; analyzed user needs and software requirements to ensure project feasibility and completed the project one month ahead of schedule; and collaborated on APIs and managed software workflow using Scrum methodology, increasing task success rate by 25%.",
-        "highlights": [
-          "Started the company"
-        ]
-      }
-    ],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
+    },
+    {
+      "name": "YAPE",
+      "position": "Backend Developer",
+      "url": "https://www.yape.com.pe",
+      "startDate": "2023-01-01",
+      "endDate": "2025-09-30",
+      "summary": "Implementé cupones de descuento para balones de gas (+40% ventas), optimicé Kafka para pedidos en tiempo real con proveedores, integré Grafana para observabilidad y reduje en 50% la detección de anomalías. Migré promociones de JSON a Azure e implementé microservicios con NestJS, CQRS y Event Sourcing.",
       "highlights": [
-        "Awarded 'Volunteer of the Month'"
+        "Implementé cupones de descuento para balones de gas, aumentando ventas en 40%.",
+        "Optimicé esquema Kafka para pedidos en tiempo real con proveedores, mejorando consistencia eventual.",
+        "Integré Grafana para observabilidad y reduje en 50% los tiempos de detección de anomalías.",
+        "Migré promociones de JSON a base de datos en Azure.",
+        "Implementé arquitectura de microservicios con NestJS, CQRS y Event Sourcing para promociones en tiempo real."
       ]
-    }],
-    "education": [
-      {
-        "institution": "University National Hermilio Valdizan", 
-        "url": "https://www.unheval.edu.pe",
-        "area": "System Engineering",
-        "studyType": "Bachelor",
-        "startDate": "2010-04-01",
-        "endDate": "2016-06-30",
-        "score": "4.0",
-        "courses": [
-          "DB1101 - Basic SQL"
-        ]
-      },
-      {
-        "institution": "University National Mayor of San Marcos", 
-        "url": "https://unmsm.edu.pe",
-        "area": "Software engineering",
-        "studyType": "Master",
-        "startDate": "2021-01-01",
-        "endDate": "2022-12-31",
-        "score": "4.0",
-        "courses": [
-          "DB1101 - Basic SQL"
-        ]
-      },
-      {
-        "institution": "University of Engineering and Technology - UTEC", 
-        "url": "https://utec.edu.pe",
-        "area": "Data Cience & IA",
-        "studyType": "Master",
-        "startDate": "2024-09-01",
-        "endDate": "2026-12-31",
-        "score": "4.0",
-        "courses": [
-          "DB1101 - Basic SQL"
-        ]
-      }
-    ],
-    "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
-    "skills": [
-      {
-        "name": "html",
-        "level": "Master",
-        "keywords": [
-          "Web development",
-          "Frontend"
-        ]
-      },
-      {
-        "name": "css",
-        "level": "Master",
-        "keywords": [
-          "Web development",
-          "Responsive design",
-          "Frontend"
-        ]
-      },
-      {
-        "name": "javascript",
-        "level": "Expert",
-        "keywords": [
-          "Web development",
-          "Frontend",
-          "Backend"
-        ]
-      },
-      {
-        "name": "nodejs",
-        "level": "Expert",
-        "keywords": [
-          "Backend development",
-          "JavaScript runtime",
-          "API development"
-        ]
-      },
-      {
-        "name": "express",
-        "level": "Advanced",
-        "keywords": [
-          "Web framework",
-          "Node.js",
-          "Backend development"
-        ]
-      },
-      {
-        "name": "mongodb",
-        "level": "Advanced",
-        "keywords": [
-          "Database",
-          "NoSQL",
-          "Backend"
-        ]
-      },
-      {
-        "name": "aws",
-        "level": "Expert",
-        "keywords": [
-          "Cloud computing",
-          "DevOps",
-          "Scalability"
-        ]
-      },
-      {
-        "name": "docker",
-        "level": "Advanced",
-        "keywords": [
-          "Containerization",
-          "DevOps",
-          "Deployment"
-        ]
-      },
-      {
-        "name": "kubernetes",
-        "level": "Intermediate",
-        "keywords": [
-          "Container orchestration",
-          "DevOps",
-          "Scalability"
-        ]
-      },
-      {
-        "name": "git",
-        "level": "Expert",
-        "keywords": [
-          "Version control",
-          "Collaboration",
-          "Source code management"
-        ]
-      },
-      {
-        "name": "graphql",
-        "level": "Intermediate",
-        "keywords": [
-          "API development",
-          "Data fetching",
-          "Backend"
-        ]
-      },
-      {
-        "name": "typescript",
-        "level": "Advanced",
-        "keywords": [
-          "JavaScript superset",
-          "Type safety",
-          "Frontend",
-          "Backend"
-        ]
-      },
-      {
-        "name": "python",
-        "level": "Advanced",
-        "keywords": [
-          "Scripting",
-          "Backend development",
-          "Data science"
-        ]
-      },
-      {
-        "name": "sql",
-        "level": "Expert",
-        "keywords": [
-          "Database",
-          "Data querying",
-          "Backend"
-        ]
-      },
-      {
-        "name": "linux",
-        "level": "Advanced",
-        "keywords": [
-          "Operating system",
-          "Server management",
-          "DevOps"
-        ]
-      },
-      {
-        "name": "rest",
-        "level": "Expert",
-        "keywords": [
-          "API development",
-          "Web services",
-          "Backend"
-        ]
-      },
-      {
-        "name": "nestjs",
-        "level": "Expert",
-        "keywords": [
-          "API development",
-          "Web services",
-          "Backend"
-        ]
-      },
-      {
-        "name": "golang",
-        "level": "Expert",
-        "keywords": [
-          "API development",
-          "Web services",
-          "Backend"
-        ]
-      }
-    ],
-    "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
-    }],
-    "interests": [{
-      "name": "Wildlife",
+    },
+    {
+      "name": "TISMART SAC (Niubiz)",
+      "position": "Backend Developer",
+      "url": "https://www.tismart.com",
+      "startDate": "2022-01-01",
+      "endDate": "2023-12-31",
+      "summary": "Mejoré el módulo de tracking, implementé framework de códigos únicos, participé en migración de OpenShift a EKS y entrené nuevos miembros del equipo.",
+      "highlights": [
+        "Mejoré el módulo de tracking y reduje los tipos de tracking en 30% para Niubiz.",
+        "Implementé framework para crear códigos de tracking únicos y consistentes en todas las plataformas.",
+        "Participé activamente en migración completa de OpenShift a EKS, acelerando desarrollo y pruebas en 20%.",
+        "Entrené nuevos miembros e implementé un programa de mentoría."
+      ]
+    },
+    {
+      "name": "RAPPI SAC",
+      "position": "Backend Developer",
+      "url": "https://www.rappi.com.pe",
+      "startDate": "2021-01-01",
+      "endDate": "2022-12-31",
+      "summary": "Aumenté cobertura de pruebas, impulsé estandarización entre áreas y mejoré entregabilidad de correos de notificación.",
+      "highlights": [
+        "Generé nuevos casos de pruebas unitarias en microservicios y aumenté cobertura en 30%.",
+        "Estandaricé unidades de medida entre áreas, reduciendo conflictos en 12%.",
+        "Mejoré apariencia de correos de notificación y reduje en 20% su probabilidad de ser marcados como spam."
+      ]
+    },
+    {
+      "name": "MAKEASY SRL",
+      "position": "Backend Developer",
+      "url": "https://sibi.pe",
+      "startDate": "2018-01-01",
+      "endDate": "2021-12-31",
+      "summary": "Coordiné y lancé nueva versión SaaS de Sibi, migré API de PHP a Golang y optimicé tiempos de entrega y ejecución con Scrum.",
+      "highlights": [
+        "Coordiné, desarrollé y lancé la nueva versión de Sibi (SaaS), mejorando ingresos en 50%.",
+        "Migré API de PHP a Golang con metodologías ágiles, aumentando velocidad de respuesta en 40%.",
+        "Analicé necesidades del usuario y requisitos de software, logrando finalizar el proyecto 1 mes antes.",
+        "Colaboré en desarrollo de APIs y flujo de trabajo con Scrum, aumentando la tasa de éxito de tareas en 25%."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Nacional Hermilio Valdizán",
+      "url": "https://www.unheval.edu.pe",
+      "area": "Ingeniería de Sistemas",
+      "studyType": "Bachiller",
+      "startDate": "2010-01-01",
+      "endDate": "2016-12-31",
+      "courses": [
+        "1er puesto en concurso de startups UNHEVAL"
+      ]
+    },
+    {
+      "institution": "Universidad Nacional Mayor de San Marcos",
+      "url": "https://unmsm.edu.pe",
+      "area": "Ingeniería de Software",
+      "studyType": "Maestría",
+      "startDate": "2021-01-01",
+      "endDate": "2021-12-31"
+    },
+    {
+      "institution": "Universidad de Ingeniería y Tecnología (UTEC)",
+      "url": "https://utec.edu.pe",
+      "area": "Ciencia de Datos e Inteligencia Artificial",
+      "studyType": "Maestría",
+      "startDate": "2024-01-01",
+      "endDate": ""
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Java (8/11/17+)",
+      "level": "Avanzado",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Spring Boot",
+        "Backend"
       ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
-    }],
-    "projects": [
-      {
+    },
+    {
+      "name": "Spring Boot",
+      "level": "Avanzado",
+      "keywords": [
+        "Microservicios",
+        "APIs"
+      ]
+    },
+    {
+      "name": "Programación Reactiva (WebFlux)",
+      "level": "Avanzado",
+      "keywords": [
+        "Reactive Systems"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "level": "Experto",
+      "keywords": [
+        "Microservicios",
+        "REST/Async"
+      ]
+    },
+    {
+      "name": "NestJS",
+      "level": "Experto",
+      "keywords": [
+        "Microservicios",
+        "CQRS"
+      ]
+    },
+    {
+      "name": "Golang",
+      "level": "Avanzado",
+      "keywords": [
+        "Backend",
+        "APIs"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Avanzado",
+      "keywords": [
+        "Automation",
+        "Backend"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Experto",
+      "keywords": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Intermedio",
+      "keywords": [
+        "Backend"
+      ]
+    },
+    {
+      "name": "Kafka",
+      "level": "Avanzado",
+      "keywords": [
+        "Event Streaming"
+      ]
+    },
+    {
+      "name": "RabbitMQ",
+      "level": "Avanzado",
+      "keywords": [
+        "Messaging"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Avanzado",
+      "keywords": [
+        "Containers"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "level": "Avanzado",
+      "keywords": [
+        "Orchestration"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "level": "Avanzado",
+      "keywords": [
+        "Jenkins",
+        "GitLab CI"
+      ]
+    },
+    {
+      "name": "AWS",
+      "level": "Avanzado",
+      "keywords": [
+        "EKS",
+        "S3",
+        "EC2",
+        "Secrets Manager"
+      ]
+    },
+    {
+      "name": "Azure",
+      "level": "Básico",
+      "keywords": [
+        "Cloud"
+      ]
+    },
+    {
+      "name": "GCP",
+      "level": "Básico",
+      "keywords": [
+        "Cloud"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Avanzado",
+      "keywords": [
+        "SQL"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "SQL"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Avanzado",
+      "keywords": [
+        "NoSQL"
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "level": "Avanzado",
+      "keywords": [
+        "SQL"
+      ]
+    },
+    {
+      "name": "Arquitectura",
+      "level": "Avanzado",
+      "keywords": [
+        "CQRS",
+        "Saga",
+        "Event Sourcing"
+      ]
+    },
+    {
+      "name": "Patrones de diseño",
+      "level": "Avanzado",
+      "keywords": [
+        "Singleton",
+        "Factory",
+        "Strategy",
+        "Observer"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio profesional"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
       "name": "Sibi",
       "isActive": true,
       "startDate": "2019-01-01",
@@ -349,7 +343,6 @@
       ],
       "url": "https://project.com/",
       "github": "github.com/soyhouston256/makeasy"
-
     },
     {
       "name": "EasyJobs",
@@ -364,4 +357,4 @@
       "github": "github.com/soyhouston256/easyjobs"
     }
   ]
-  }
+}
