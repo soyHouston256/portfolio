@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Max Houston Ramirez Martel",
-    "label": "Backend Developer especializado en Node.js con más de 7 años de experiencia en microservicios y soluciones cloud-native.",
+    "label": "Backend Developer · Node.js · Microservicios · Estudiante de Maestría en Data Science e IA",
     "image": "/me.webp",
     "email": "maxr524@gmail.com",
     "phone": "+51 980687918",
     "url": "https://maxflow.ink",
-    "summary": "Backend Developer especializado en Node.js con más de 7 años de experiencia diseñando y desarrollando microservicios escalables, APIs REST/Async y soluciones cloud-native. Experto en arquitecturas distribuidas, patrones empresariales y programación reactiva.",
+    "summary": "Backend Developer especializado en Node.js con más de 8 años de experiencia diseñando y desarrollando microservicios escalables, APIs REST/Async y soluciones cloud-native. Experto en arquitecturas distribuidas, patrones empresariales y programación reactiva.",
     "location": {
       "city": "Lima",
       "countryCode": "PE",
@@ -170,7 +170,7 @@
     },
     {
       "name": "Golang",
-      "level": "Avanzado",
+      "level": "Experto",
       "keywords": [
         "Backend",
         "APIs"
@@ -237,7 +237,7 @@
     },
     {
       "name": "AWS",
-      "level": "Avanzado",
+      "level": "Experto",
       "keywords": [
         "EKS",
         "S3",
@@ -326,23 +326,13 @@
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Sibi.pe es una plataforma digital diseñada para ayudar a pequeñas empresas en Perú a gestionar sus procesos de facturación y ventas de forma más eficiente. Ofrece una aplicación que permite a los usuarios crear y administrar facturas y boletas electrónicas de manera rápida y sencilla.",
-      "highlights": [
-        "Ganador del concurso UNHEVAL StartUp 2017"
+      "badges": [
+        {
+          "label": "Ganador StartUp Perú 8G+",
+          "url": "https://startup.proinnovate.gob.pe/wp-content/uploads/2022/04/Resultados-Preliminares-StartUp-Peru-8G-Emprendimientos-Innovadores.pdf"
+        }
       ],
-      "url": "https://sibi.pe",
-      "github": "https://github.com/soyhouston256/sibi"
-    },
-    {
-      "name": "Makeasy",
-      "isActive": false,
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Makeasy S.R.L. es una empresa peruana especializada en desarrollo de software y soluciones digitales. La empresa ha sido reconocida por la SUNAT (autoridad tributaria del Perú) como buen contribuyente y está inscrita en el Registro Nacional de Proveedores, lo que le permite contratar con el Estado peruano.",
-      "highlights": [
-        "Ganador del concurso AIHacks 2016"
-      ],
-      "url": "https://project.com/",
-      "github": "https://github.com/soyhouston256/makeasy"
+      "url": "https://sibi.pe"
     },
     {
       "name": "EasyJobs",
@@ -350,11 +340,47 @@
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "EasyJobs es una plataforma de software como servicio (SaaS) diseñada para agilizar el proceso de contratación de las empresas, con funciones como creación de perfiles de candidatos, mensajería integrada y seguimiento y filtrado avanzado de postulantes. La plataforma busca simplificar el reclutamiento mediante herramientas como el análisis automático de currículums.",
-      "highlights": [
-        "Ganador del concurso UNHEVAL StartUp 2019"
-      ],
-      "url": "https://project.com/",
-      "github": "https://github.com/soyhouston256/easyjobs"
+      "badges": [
+        {
+          "label": "Ganador UNHEVAL STARTUP 2019 Winner"
+        }
+      ]
+    },
+    {
+      "name": "Makeasy",
+      "isActive": false,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Makeasy S.R.L. es una empresa peruana especializada en desarrollo de software y soluciones digitales. La empresa ha sido reconocida por la SUNAT (autoridad tributaria del Perú) como buen contribuyente y está inscrita en el Registro Nacional de Proveedores, lo que le permite contratar con el Estado peruano.",
+      "highlights": []
+    },
+    {
+      "name": "Gym",
+      "isActive": true,
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "description": "FIT Manager es una plataforma de gestión de entrenamiento que permite crear y seguir planes de ejercicio personalizados, con fases progresivas, registro de series, repeticiones y peso, métricas de progreso y recomendaciones de cardio y nutrición.",
+      "highlights": [],
+      "url": "https://gym.maxflow.ink"
+    },
+    {
+      "name": "Pichanga",
+      "isActive": true,
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "description": "Pichanga es una plataforma para organizar y coordinar partidos casuales de fútbol 5 en Lima, pensada para que los aficionados encuentren y armen pichangas de manera sencilla.",
+      "highlights": [],
+      "url": "https://pichanga.maxflow.ink"
+    },
+    {
+      "name": "Sunat",
+      "isActive": true,
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "description": "SUNAT Wrapped es una herramienta que analiza tus gastos anuales a partir de tus boletas de la SUNAT. Procesa todo en el navegador para mostrar un resumen del año, perfiles de gasto y una estimación de la devolución de impuestos.",
+      "highlights": [],
+      "url": "https://sunat.maxflow.ink",
+      "github": "https://github.com/soyHouston256/sunat"
     }
   ]
 }

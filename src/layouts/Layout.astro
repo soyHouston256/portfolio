@@ -31,7 +31,8 @@ const personSchema = {
 	"@context": "https://schema.org",
 	"@type": "Person",
 	name: basics.name,
-	jobTitle: basics.label,
+	// jobTitle stays a clean role string; basics.label is a dotted Hero subtitle.
+	jobTitle: basics.label.split("·")[0].trim(),
 	description: basics.summary,
 	url: canonicalURL,
 	image: ogImage,
