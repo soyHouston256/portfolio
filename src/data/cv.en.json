@@ -1,0 +1,360 @@
+{
+  "basics": {
+    "name": "Max Houston Ramirez Martel",
+    "label": "Backend Developer specialized in Node.js with over 7 years of experience in microservices and cloud-native solutions.",
+    "image": "/me.webp",
+    "email": "maxr524@gmail.com",
+    "phone": "+51 980687918",
+    "url": "https://maxflow.ink",
+    "summary": "Backend Developer specialized in Node.js with over 7 years of experience designing and developing scalable microservices, REST/Async APIs and cloud-native solutions. Expert in distributed architectures, enterprise patterns and reactive programming.",
+    "location": {
+      "city": "Lima",
+      "countryCode": "PE",
+      "region": "Lima"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "soyHouston256",
+        "url": "https://github.com/soyHouston256"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "soyhouston256",
+        "url": "https://www.linkedin.com/in/soyhouston256/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "SOFTTECK (Rimac)",
+      "position": "Software Engineer",
+      "url": "https://www.rimac.com",
+      "startDate": "2025-10-01",
+      "endDate": "",
+      "summary": "Built the customer portal for direct insurance sales without brokers and currently building the automatic policy renewal portal, reducing the process from several days to minutes.",
+      "highlights": [
+        "Built a customer portal for direct insurance sales without brokers.",
+        "Built the automatic policy renewal portal, reducing the process from days to minutes."
+      ]
+    },
+    {
+      "name": "YAPE",
+      "position": "Backend Developer",
+      "url": "https://www.yape.com.pe",
+      "startDate": "2023-01-01",
+      "endDate": "2025-09-30",
+      "summary": "Built discount coupons for gas cylinders (+40% sales), optimized Kafka for real-time orders with suppliers, integrated Grafana for observability and cut anomaly detection by 50%. Migrated promotions from JSON to Azure and implemented microservices with NestJS, CQRS and Event Sourcing.",
+      "highlights": [
+        "Built discount coupons for gas cylinders, increasing sales by 40%.",
+        "Optimized the Kafka schema for real-time orders with suppliers, improving eventual consistency.",
+        "Integrated Grafana for observability and reduced anomaly detection times by 50%.",
+        "Migrated promotions from JSON to a database on Azure.",
+        "Implemented a microservices architecture with NestJS, CQRS and Event Sourcing for real-time promotions."
+      ]
+    },
+    {
+      "name": "TISMART SAC (Niubiz)",
+      "position": "Backend Developer",
+      "url": "https://www.tismart.com",
+      "startDate": "2022-01-01",
+      "endDate": "2023-12-31",
+      "summary": "Improved the tracking module, built a unique-code framework, took part in the OpenShift to EKS migration and trained new team members.",
+      "highlights": [
+        "Improved the tracking module and reduced tracking types by 30% for Niubiz.",
+        "Built a framework to create unique, consistent tracking codes across all platforms.",
+        "Actively took part in the full OpenShift to EKS migration, speeding up development and testing by 20%.",
+        "Trained new members and set up a mentorship program."
+      ]
+    },
+    {
+      "name": "RAPPI SAC",
+      "position": "Backend Developer",
+      "url": "https://www.rappi.com.pe",
+      "startDate": "2021-01-01",
+      "endDate": "2022-12-31",
+      "summary": "Increased test coverage, drove standardization across teams and improved the deliverability of notification emails.",
+      "highlights": [
+        "Created new unit test cases across microservices and increased coverage by 30%.",
+        "Standardized units of measure across teams, reducing conflicts by 12%.",
+        "Improved the appearance of notification emails and reduced their chance of being flagged as spam by 20%."
+      ]
+    },
+    {
+      "name": "MAKEASY SRL",
+      "position": "Backend Developer",
+      "url": "https://sibi.pe",
+      "startDate": "2018-01-01",
+      "endDate": "2021-12-31",
+      "summary": "Coordinated and launched the new SaaS version of Sibi, migrated the API from PHP to Golang and optimized delivery and execution times with Scrum.",
+      "highlights": [
+        "Coordinated, developed and launched the new version of Sibi (SaaS), improving revenue by 50%.",
+        "Migrated the API from PHP to Golang using agile methodologies, increasing response speed by 40%.",
+        "Analyzed user needs and software requirements, finishing the project 1 month ahead of schedule.",
+        "Collaborated on API development and Scrum workflow, increasing the task success rate by 25%."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Nacional Hermilio Valdizán",
+      "url": "https://www.unheval.edu.pe",
+      "area": "Systems Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2010-01-01",
+      "endDate": "2016-12-31",
+      "courses": [
+        "1st place in the UNHEVAL startup competition"
+      ]
+    },
+    {
+      "institution": "Universidad Nacional Mayor de San Marcos",
+      "url": "https://unmsm.edu.pe",
+      "area": "Software Engineering",
+      "studyType": "Master's Degree",
+      "startDate": "2021-01-01",
+      "endDate": "2021-12-31"
+    },
+    {
+      "institution": "Universidad de Ingeniería y Tecnología (UTEC)",
+      "url": "https://utec.edu.pe",
+      "area": "Data Science and Artificial Intelligence",
+      "studyType": "Master's Degree",
+      "startDate": "2024-01-01",
+      "endDate": ""
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Java (8/11/17+)",
+      "level": "Advanced",
+      "keywords": [
+        "Spring Boot",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Spring Boot",
+      "level": "Advanced",
+      "keywords": [
+        "Microservices",
+        "APIs"
+      ]
+    },
+    {
+      "name": "Reactive Programming (WebFlux)",
+      "level": "Advanced",
+      "keywords": [
+        "Reactive Systems"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "level": "Expert",
+      "keywords": [
+        "Microservices",
+        "REST/Async"
+      ]
+    },
+    {
+      "name": "NestJS",
+      "level": "Expert",
+      "keywords": [
+        "Microservices",
+        "CQRS"
+      ]
+    },
+    {
+      "name": "Golang",
+      "level": "Advanced",
+      "keywords": [
+        "Backend",
+        "APIs"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": [
+        "Automation",
+        "Backend"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Expert",
+      "keywords": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Intermediate",
+      "keywords": [
+        "Backend"
+      ]
+    },
+    {
+      "name": "Kafka",
+      "level": "Advanced",
+      "keywords": [
+        "Event Streaming"
+      ]
+    },
+    {
+      "name": "RabbitMQ",
+      "level": "Advanced",
+      "keywords": [
+        "Messaging"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": [
+        "Containers"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "level": "Advanced",
+      "keywords": [
+        "Orchestration"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "level": "Advanced",
+      "keywords": [
+        "Jenkins",
+        "GitLab CI"
+      ]
+    },
+    {
+      "name": "AWS",
+      "level": "Advanced",
+      "keywords": [
+        "EKS",
+        "S3",
+        "EC2",
+        "Secrets Manager"
+      ]
+    },
+    {
+      "name": "Azure",
+      "level": "Basic",
+      "keywords": [
+        "Cloud"
+      ]
+    },
+    {
+      "name": "GCP",
+      "level": "Basic",
+      "keywords": [
+        "Cloud"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Advanced",
+      "keywords": [
+        "SQL"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": [
+        "SQL"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Advanced",
+      "keywords": [
+        "NoSQL"
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "level": "Advanced",
+      "keywords": [
+        "SQL"
+      ]
+    },
+    {
+      "name": "Architecture",
+      "level": "Advanced",
+      "keywords": [
+        "CQRS",
+        "Saga",
+        "Event Sourcing"
+      ]
+    },
+    {
+      "name": "Design Patterns",
+      "level": "Advanced",
+      "keywords": [
+        "Singleton",
+        "Factory",
+        "Strategy",
+        "Observer"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Sibi",
+      "isActive": true,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Sibi.pe is a digital platform designed to help small businesses in Peru manage their invoicing and sales processes more efficiently. It offers an application that lets users create and manage electronic invoices and receipts quickly and easily.",
+      "highlights": [
+        "Won the UNHEVAL StartUp 2017 competition"
+      ],
+      "url": "https://sibi.pe",
+      "github": "https://github.com/soyhouston256/sibi"
+    },
+    {
+      "name": "Makeasy",
+      "isActive": false,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Makeasy S.R.L. is a Peruvian company specialized in software development and digital solutions. The company has been recognized by SUNAT (Peru's tax authority) as a good taxpayer and is registered with the National Registry of Suppliers, which allows it to contract with the Peruvian government.",
+      "highlights": [
+        "Won the AIHacks 2016 competition"
+      ],
+      "url": "https://project.com/",
+      "github": "https://github.com/soyhouston256/makeasy"
+    },
+    {
+      "name": "EasyJobs",
+      "isActive": true,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "EasyJobs is a software-as-a-service (SaaS) platform designed to streamline the hiring process for companies, with features such as candidate profile creation, in-app messaging, and advanced applicant tracking and filtering. The platform aims to simplify recruitment through tools like automatic resume parsing.",
+      "highlights": [
+        "Won the UNHEVAL StartUp 2019 competition"
+      ],
+      "url": "https://project.com/",
+      "github": "https://github.com/soyhouston256/easyjobs"
+    }
+  ]
+}

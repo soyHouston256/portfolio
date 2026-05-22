@@ -1,0 +1,264 @@
+/* ============================================================
+   Precision Minimal — global stylesheet
+   Fonts, design tokens, resets, base typography, motion, print.
+   ============================================================ */
+
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/geist-mono";
+
+/* ---------- Design tokens ---------- */
+:root {
+  /* Color — light (default) */
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --text: #18181b;
+  --text-secondary: #71717a;
+  --border: #e4e4e7;
+  --accent: #2563eb;
+
+  /* Typography */
+  --font-sans: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo,
+    Consolas, monospace;
+
+  /* Type scale */
+  --text-xs: 0.7rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.9rem;
+  --text-md: 1.05rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2.5rem;
+
+  /* Spacing — 8px grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 56px;
+  --space-8: 64px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-full: 999px;
+
+  /* Layout */
+  --container: 680px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f0f0e;
+  --surface: #1a1a18;
+  --text: #fafaf8;
+  --text-secondary: #a1a1aa;
+  --border: #27272a;
+  --accent: #3b82f6;
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+/* ---------- Base typography ---------- */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* H2 section labels — uppercase eyebrow with trailing rule */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ---------- Visually-hidden text (a11y) ---------- */
+/* Removes content from view while keeping it in the accessibility tree
+   for screen readers. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Skip link (a11y) ---------- */
+/* Visually hidden until focused, then revealed as a fixed pill so
+   keyboard users can jump straight to <main>. */
+.skip-link {
+  position: fixed;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: 1000;
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: #ffffff;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  transform: translateY(-150%);
+  transition: transform 0.2s var(--ease-out);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* ---------- Focus states (hard requirement) ---------- */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+/* Remove the default outline only when focus-visible is supported */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ---------- Primary button ---------- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: #ffffff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: opacity 0.2s var(--ease-out);
+}
+.btn-primary:hover {
+  opacity: 0.88;
+}
+
+/* ---------- Entrance motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: reveal 500ms var(--ease-out) forwards;
+    animation-delay: var(--reveal-delay, 0ms);
+  }
+  @keyframes reveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ---------- Print ---------- */
+.print {
+  display: none !important;
+}
+
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #000000;
+    --text-secondary: #333333;
+    --border: #cccccc;
+    --accent: #000000;
+  }
+
+  html,
+  body {
+    background: #ffffff;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print {
+    display: block !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  astro-dev-toolbar,
+  ninja-keys {
+    display: none !important;
+  }
+
+  article {
+    break-inside: avoid;
+  }
+}

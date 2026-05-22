@@ -1,0 +1,61 @@
+---
+import type { Lang } from "@/i18n/ui";
+import { getUI } from "@/i18n/ui";
+
+interface Props {
+	lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = getUI(lang);
+
+const routes: Record<Lang, string> = {
+	es: "/",
+	en: "/en/",
+};
+---
+
+<nav class="lang-switcher no-print" aria-label={ui.langSwitcher.label}>
+	<a
+		href={routes.es}
+		hreflang="es"
+		aria-current={lang === "es" ? "true" : undefined}
+		class:list={[{ active: lang === "es" }]}
+	>
+		{ui.langSwitcher.es}
+	</a>
+	<span aria-hidden="true">/</span>
+	<a
+		href={routes.en}
+		hreflang="en"
+		aria-current={lang === "en" ? "true" : undefined}
+		class:list={[{ active: lang === "en" }]}
+	>
+		{ui.langSwitcher.en}
+	</a>
+</nav>
+
+<style>
+	.lang-switcher {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-1);
+		font-family: var(--font-mono);
+		font-size: var(--text-xs);
+	}
+	.lang-switcher a {
+		padding: var(--space-1) var(--space-1);
+		color: var(--text-secondary);
+		transition: color 0.2s var(--ease-out);
+	}
+	.lang-switcher a:hover {
+		color: var(--text);
+	}
+	.lang-switcher a.active {
+		color: var(--text);
+		font-weight: 600;
+	}
+	.lang-switcher span {
+		color: var(--border);
+	}
+</style>

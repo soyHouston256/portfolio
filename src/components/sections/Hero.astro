@@ -1,123 +1,218 @@
 ---
-import { basics } from '@cv';
-import Mail from '@/icons/Mail.astro';
-import Phone from '@/icons/Phone.astro';
-import X from '@/icons/X.astro';
-import LinkedIn from '@/icons/LinkedIn.astro';
-import GitHub from '@/icons/GitHub.astro';
-import WorldMap from '@/icons/WorldMap.astro';
-import Section from '../Section.astro';
+import type { Lang } from "@/i18n/ui";
+import { getUI } from "@/i18n/ui";
+import { getCV } from "@/data/cv";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import X from "@/icons/X.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import Section from "../Section.astro";
+import LanguageSwitcher from "../LanguageSwitcher.astro";
+import ThemeToggle from "../ThemeToggle.astro";
+
+interface Props {
+	lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = getUI(lang);
+const { basics } = getCV(lang);
 
 const { name, label, image, location, profiles, phone, email } = basics;
-const { city, region } = location
+const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
-    X,
-    GitHub,
-    LinkedIn,
-}
+	X,
+	GitHub,
+	LinkedIn,
+};
 ---
-<Section>
-    <div class="container">
-        <div class="info">
-            <h1>{name}</h1>
-            <h2>{label}</h2>
-            <span>
-                <WorldMap/>
-                {city}, {region}
-            </span>
-            <footer>
-                {
-                    email && (
-                        <a href={`mailto:${email}`}
-                        title = {`send email to ${name} from ${email}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            <Mail/>
-                        </a>
-                    )
-                }
-                {
-                    phone && (
-                        <a href={`tel:${phone}`}
-                        title = {`Call to ${name} to number ${phone}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            <Phone/>
-                        </a>
-                    )
-                }
-                {
-                    profiles.map(({network, url}) => {
-                        const Icon = SOCIAL_ICONS[network];
-                        return (
-                            <a href={url}
-                            title = {`Visit ${name} profile on ${network}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                                {Icon && <Icon/>}
-                            </a>
-                        )
-                    })
-                }
-            </footer>
-        </div>
-        <figure>
-            <img src={image} alt="">
-        </figure>
-    </div>
-</Section>
-<style>
-    .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-    .info {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding-right: 32px;
-        color: #666;
-    }
-    footer a {
-        color: #777;
-        display:  inline-flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        margin-top: 8px;
-        border: 1px solid #eee;
-        padding: 4px;
-        height: 32px;
-        width: 32px;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-    }
-    footer a:hover {
-        background-color: #eee;
-    }
-    h1 {
-        color: black;
-        font-size: 2rem;
-        font-weight: 700;
-    }
-    h2 {
-        color: #444;
-        font-size: 1.1rem;
-        font-weight: 500;
-        text-wrap:  balance;
 
-    }
-    img {
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        width: 128px;
-        border-radius: 6px;
-    }
+<Section>
+	<div class="toolbar no-print">
+		<LanguageSwitcher lang={lang} />
+		<ThemeToggle lang={lang} />
+	</div>
+	<div class="container">
+		<div class="info">
+			<h1>{name}</h1>
+			<p class="label">{label}</p>
+			<span class="location font-mono">
+				<WorldMap />
+				{city}, {region}
+			</span>
+			<div class="actions">
+				<nav class="social" aria-label="Social links">
+					{
+						email && (
+							<a
+								href={`mailto:${email}`}
+								title={ui.hero.sendEmail(name, email)}
+								aria-label={ui.hero.sendEmail(name, email)}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Mail />
+							</a>
+						)
+					}
+					{
+						phone && (
+							<a
+								href={`tel:${phone}`}
+								title={ui.hero.callPhone(name, phone)}
+								aria-label={ui.hero.callPhone(name, phone)}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Phone />
+							</a>
+						)
+					}
+					{
+						profiles.map(({ network, url }) => {
+							const Icon = SOCIAL_ICONS[network];
+							return (
+								<a
+									href={url}
+									title={ui.hero.visitProfile(name, network)}
+									aria-label={ui.hero.visitProfile(name, network)}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{Icon && <Icon />}
+								</a>
+							);
+						})
+					}
+				</nav>
+				<button type="button" class="btn-primary no-print" id="download-cv">
+					<svg
+						width="14"
+						height="14"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+					>
+						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+						<path d="M7 10l5 5 5-5"></path>
+						<path d="M12 15V3"></path>
+					</svg>
+					{ui.hero.downloadCV}
+				</button>
+			</div>
+		</div>
+		<figure>
+			<img src={image} alt={ui.hero.profilePhotoAlt(name)} width="112" height="112" />
+		</figure>
+	</div>
+</Section>
+
+<script>
+	document.getElementById("download-cv")?.addEventListener("click", () => {
+		window.print();
+	});
+</script>
+
+<style>
+	.toolbar {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: var(--space-2);
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--space-4);
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+		min-width: 0;
+	}
+	h1 {
+		font-size: var(--text-2xl);
+		font-weight: 700;
+		letter-spacing: -0.04em;
+		line-height: 1.05;
+		color: var(--text);
+	}
+	.label {
+		font-size: var(--text-md);
+		font-weight: 400;
+		color: var(--text-secondary);
+		text-wrap: balance;
+		line-height: 1.5;
+	}
+	.location {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-1);
+		font-size: var(--text-sm);
+		color: var(--text-secondary);
+	}
+	.actions {
+		display: flex;
+		align-items: center;
+		gap: var(--space-3);
+		flex-wrap: wrap;
+		margin-top: var(--space-1);
+	}
+	.social {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-1);
+		/* Negative margin keeps the visual baseline aligned despite
+		   the 44px tap-target padding on each link. */
+		margin-left: -10px;
+	}
+	.social a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		/* WCAG 2.5.5: 44x44 tap target while the icon stays ~18px. */
+		width: 44px;
+		height: 44px;
+		color: var(--text-secondary);
+		transition: color 0.2s var(--ease-out);
+	}
+	.social a:hover {
+		color: var(--text);
+	}
+	.social a :global(svg) {
+		width: 18px;
+		height: 18px;
+	}
+	.location :global(svg) {
+		width: 13px;
+		height: 13px;
+	}
+	figure {
+		flex-shrink: 0;
+	}
+	img {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		width: 112px;
+		height: 112px;
+		border-radius: var(--radius-md);
+		border: 1px solid var(--border);
+	}
+
+	@media (max-width: 560px) {
+		.container {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+	}
 </style>

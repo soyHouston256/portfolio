@@ -1,9 +1,20 @@
 ---
-import {basics } from "@cv";
+import type { Lang } from "@/i18n/ui";
+import { getUI } from "@/i18n/ui";
+import { getCV } from "@/data/cv";
+
+interface Props {
+    lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = getUI(lang);
+const { basics } = getCV(lang);
 const { profiles } = basics;
+
 const SOCIAL_ICONS: Record<string, string> = {
     GitHub: `<svg
-    style="margin-right: 8px" 
+    style="margin-right: 8px"
     width="16"
     height="16"
     viewBox="0 0 24 24"
@@ -26,7 +37,7 @@ const SOCIAL_ICONS: Record<string, string> = {
 >
 `,
     X: `<svg
-    style="margin-right: 8px" 
+    style="margin-right: 8px"
   width="16"
   height="16"
   viewBox="0 0 24 24"
@@ -42,117 +53,83 @@ const profilesInfo = profiles.map(({network, url}) => {
     const icon = SOCIAL_ICONS[network];
     return {
         id: network,
-        section: 'Social',
-        title: `visit ${network}`,
+        section: ui.commandPalette.socialSection,
+        title: ui.commandPalette.visit(network),
         url,
         icon,
         hotkey: `ctrl+${network[0].toLowerCase()}`
     }
 })
 
+const printAction = {
+    title: ui.commandPalette.print,
+    section: ui.commandPalette.actionsSection,
+};
 ---
-<footer>
-    Pulsa <kbd> cmd </kbd> + <kbd> k </kbd> For open the command palete
+<footer class="no-print">
+    {ui.commandPalette.hintBefore} <kbd> cmd </kbd> + <kbd> k </kbd> {ui.commandPalette.hintAfter}
 </footer>
 <ninja-keys
 id="hotkeypad"
-placeholder="Search commands"
-data-info = {JSON.stringify(profilesInfo)}
+class="no-print"
+placeholder={ui.commandPalette.placeholder}
+data-info={JSON.stringify(profilesInfo)}
+data-print={JSON.stringify(printAction)}
 > </ninja-keys>
 
 <script>
 import 'ninja-keys';
 const ninja = document.querySelector('ninja-keys');
 
-if (ninja !=null ) {
-    const info =  ninja.getAttribute('data-info') ?? '[]';
+if (ninja != null) {
+    const info = ninja.getAttribute('data-info') ?? '[]';
+    const printRaw = ninja.getAttribute('data-print') ?? '{}';
+    const printAction = JSON.parse(printRaw);
     const parseInfo = JSON.parse(info);
-    const data = parseInfo.map((item:any) => {
+    const data = parseInfo.map((item: any) => {
         return {
             ...item,
             handler: () => {
                 window.open(item.url, '_blank');
             }
         }
-        }
-    )
-    
+    });
+
     ninja.data = [
         {
             id: 'print',
-            title: 'Imprimir',
+            title: printAction.title,
             hotkey: 'ctrl+p',
-            section: 'Acciones',
+            section: printAction.section,
             handler: () => {
                 window.print();
             },
         },
         ...data,
     ]
-
 }
 </script>
 
 <style>
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    @media (min-width: 601px) {
-        #normal-footer {
-            display: block;
-        }
-
-        #footer-button {
-            display: none;
-        }
-    }
-
-    @media (max-width: 600px) {
-        #normal-footer {
-            display: none;
-        }
-
-        #footer-button {
-            background: #fff;
-            position: fixed;
-            border: 1px solid #eee;
-            right: 10px;
-            bottom: 10px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-    }
-
-    footer{
-        background: #fdfdfd;
-        border-bottom: 1px solid #eaeaea;
+    footer {
         position: fixed;
-        bottom: 0px;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        padding: 8px 16px;
+        padding: var(--space-2) var(--space-3);
         text-align: center;
-
-        view-timeline-name: --revealing;
-        view-timeline-axis: block;
-
-        animation: linear 0.3s fadeIn;
-        animation-timeline: --revealing;
-        animation-range: entry 100% cover 10%;
+        font-size: var(--text-xs);
+        color: var(--text-secondary);
+        background: var(--surface);
+        border-top: 1px solid var(--border);
     }
     kbd {
-        background: #eee;
-        border-radius: 4px;
-        padding: 2px 4px;
-        font-size: 12px;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 1px 5px;
     }
 </style>

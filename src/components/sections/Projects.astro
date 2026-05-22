@@ -1,97 +1,145 @@
 ---
+import type { Lang } from "@/i18n/ui";
+import { getUI } from "@/i18n/ui";
+import { getCV } from "@/data/cv";
 import Section from "../Section.astro";
-import { projects } from "@cv";
+
+interface Props {
+	lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = getUI(lang);
+const { projects } = getCV(lang);
 ---
 
-<Section title="Experience">
-    <ul>
-        {
-            projects.map(({name, description, url, highlights, github, isActive}) => 
-                {
-                    return (
-                    <li>
-                        <article>
-                            <header>
-                                <h3>
-                                <a href={url} title={`see the porject ${name}`} target="_blank">
-                                    {name}
-                                </a>
-                                <a href={github}>repository</a>
-                                {
-                                    isActive && <span>&bull;</span>
-                                }
-                                </h3>
-                                <p>{description}</p>
-                            </header>
-                            <footer>
-                                    {
-                                        highlights.map((highlight) => (
-                                            <span>{highlight}</span>
-                                        ))
-                                    }
-                            </footer>
-                        </article>
-                    </li>
-                )}
-            )
-        }
-    </ul>
-
+<Section title={ui.sections.projects}>
+	<ul>
+		{
+			projects.map(({ name, description, url, highlights, github, isActive }) => {
+				return (
+					<li>
+						<article>
+							<header>
+								<h3>
+									<a
+										href={url.startsWith("http") ? url : `https://${url}`}
+										title={ui.projectsLabels.seeProject(name)}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{name}
+									</a>
+									{isActive && (
+										<>
+											<span class="status-dot" aria-hidden="true" />
+											<span class="sr-only">{ui.projectsLabels.active}</span>
+										</>
+									)}
+								</h3>
+								<a
+									class="repo font-mono"
+									href={github.startsWith("http") ? github : `https://${github}`}
+									title={`${ui.projectsLabels.repository}: ${name}`}
+									aria-label={`${ui.projectsLabels.repository}: ${name}`}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{ui.projectsLabels.repository}
+								</a>
+							</header>
+							<p>{description}</p>
+							{highlights && highlights.length > 0 && (
+								<footer>
+									{highlights.map((highlight) => (
+										<span class="badge font-mono">{highlight}</span>
+									))}
+								</footer>
+							)}
+						</article>
+					</li>
+				);
+			})
+		}
+	</ul>
 </Section>
 
 <style>
-    ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
-    }
-    h3 {
-        font-size: 1.3rem;
-        font-weight: 500;
-        color: #111;
-    }
-    article a {
-        text-decoration: none;
-        color: #111;
-    }
-    article a:hover {
-        text-decoration: underline;
-    }
-    article p {
-        font-size: 0.75rem;
-        line-height: 1.2rem;
-        color: #333;
-        margin-bottom: 4px;
-    }
-    article {
-        border-radius: 8px;
-        border: 1px solid #eee;
-        gap: 16px;
-        display: flex;
-        flex-direction: column;
-        padding: 16px;
-        height: 100%;
-    }
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 0.6rem;
-        gap: 4px;
-    }
-
-    article header h3 {
-        flex: 1;
-    }
-    article h3 span {
-        color: rgb(0, 188, 44);
-    }
-    footer span {
-        border-radius: 6px;
-        background-color: #000;
-        color: white;
-        font-size: 0.8rem;
-        font-weight: 500;
-        list-style: none;
-        padding: 0.2rem 0.6rem;
-    }
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: var(--space-3);
+	}
+	article {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+		height: 100%;
+		padding: 20px;
+		background: var(--surface);
+		border: 1px solid var(--border);
+		border-radius: var(--radius-md);
+		transition: border-color 0.2s var(--ease-out);
+	}
+	article:hover {
+		border-color: var(--accent);
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-1);
+	}
+	h3 {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		font-size: var(--text-lg);
+		font-weight: 600;
+		color: var(--text);
+	}
+	h3 a {
+		transition: color 0.2s var(--ease-out);
+	}
+	h3 a:hover {
+		color: var(--accent);
+	}
+	.status-dot {
+		width: 7px;
+		height: 7px;
+		border-radius: var(--radius-full);
+		background: #22c55e;
+	}
+	.repo {
+		font-size: var(--text-xs);
+		color: var(--text-secondary);
+		transition: color 0.2s var(--ease-out);
+	}
+	.repo:hover {
+		color: var(--accent);
+	}
+	p {
+		font-size: var(--text-sm);
+		line-height: 1.55;
+	}
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-1);
+		margin-top: auto;
+	}
+	.badge {
+		padding: 3px 8px;
+		font-size: var(--text-xs);
+		color: var(--text);
+		background: transparent;
+		border: 1px solid var(--text);
+		border-radius: var(--radius-sm);
+		transition:
+			background-color 0.2s var(--ease-out),
+			color 0.2s var(--ease-out);
+	}
+	.badge:hover {
+		background: var(--text);
+		color: var(--bg);
+	}
 </style>

@@ -1,25 +1,20 @@
 ---
+import type { Lang } from "@/i18n/ui";
+import { getUI } from "@/i18n/ui";
+import { getCV } from "@/data/cv";
 import Section from "../Section.astro";
-import { basics } from "@cv";
 
-const { summary }  = basics;
+interface Props {
+	lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = getUI(lang);
+const { basics } = getCV(lang);
+
+const { summary } = basics;
 ---
-<Section>
-    <h2>About</h2>
-    <p>{ summary }</p>
+
+<Section title={ui.sections.about}>
+	<p>{summary}</p>
 </Section>
-
-<style>
-    h2 {
-        margin: 0;
-        color: black;
-    }
-    p {
-        color: #666;
-        font-size: 0.9rem;
-        line-height: 1.5;
-        margin: 0;
-        text-wrap: pretty;
-    }
-</style>
-

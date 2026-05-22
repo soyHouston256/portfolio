@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "astro": "^4.10.1",
+    "@astrojs/sitemap": "^3.2.1",
+    "@fontsource-variable/geist-mono": "^5.2.8",
+    "@fontsource-variable/inter": "^5.2.8",
+    "astro": "^4.16.19",
     "ninja-keys": "^1.2.2",
     "typescript": "^5.4.5"
   }

@@ -325,36 +325,36 @@
       "isActive": true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Sibi.pe is a digital platform designed to help small businesses in Peru manage their invoicing and sales processes more efficiently. It offers an application that allows users to create and manage electronic invoices and receipts quickly and easily. Here are some of its key features.",
+      "description": "Sibi.pe es una plataforma digital diseñada para ayudar a pequeñas empresas en Perú a gestionar sus procesos de facturación y ventas de forma más eficiente. Ofrece una aplicación que permite a los usuarios crear y administrar facturas y boletas electrónicas de manera rápida y sencilla.",
       "highlights": [
-        "Won award at UNHEVAL StartUp 2017"
+        "Ganador del concurso UNHEVAL StartUp 2017"
       ],
       "url": "https://sibi.pe",
-      "github": "github.com/soyhouston256/sibi"
+      "github": "https://github.com/soyhouston256/sibi"
     },
     {
       "name": "Makeasy",
       "isActive": false,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Makeasy S.R.L. is a Peruvian company specializing in software development and digital solutions. The company has been recognized by SUNAT (Peru's tax authority) as a good contributor and is registered with the National Registry of Suppliers, which allows it to engage in contracts with the Peruvian government​.",
+      "description": "Makeasy S.R.L. es una empresa peruana especializada en desarrollo de software y soluciones digitales. La empresa ha sido reconocida por la SUNAT (autoridad tributaria del Perú) como buen contribuyente y está inscrita en el Registro Nacional de Proveedores, lo que le permite contratar con el Estado peruano.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Ganador del concurso AIHacks 2016"
       ],
       "url": "https://project.com/",
-      "github": "github.com/soyhouston256/makeasy"
+      "github": "https://github.com/soyhouston256/makeasy"
     },
     {
       "name": "EasyJobs",
       "isActive": true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "EasyJobs is a software-as-a-service (SaaS) platform designed to streamline the hiring process for companies, offering features such as candidate profile creation, in-app messaging, and advanced applicant tracking and filtering. The platform is aimed at simplifying recruitment through tools like automatic resume parsing.",
+      "description": "EasyJobs es una plataforma de software como servicio (SaaS) diseñada para agilizar el proceso de contratación de las empresas, con funciones como creación de perfiles de candidatos, mensajería integrada y seguimiento y filtrado avanzado de postulantes. La plataforma busca simplificar el reclutamiento mediante herramientas como el análisis automático de currículums.",
       "highlights": [
-        "Won award at UNHEVAL StartUp 2019"
+        "Ganador del concurso UNHEVAL StartUp 2019"
       ],
       "url": "https://project.com/",
-      "github": "github.com/soyhouston256/easyjobs"
+      "github": "https://github.com/soyhouston256/easyjobs"
     }
   ]
 }
