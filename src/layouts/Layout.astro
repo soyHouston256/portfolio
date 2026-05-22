@@ -1,6 +1,7 @@
 ---
 import type { Lang } from "@/i18n/ui";
 import { getCV } from "@/data/cv";
+import { getAbsoluteLocaleUrl } from "astro:i18n";
 import "@/styles/global.css";
 
 interface Props {
@@ -11,16 +12,19 @@ interface Props {
 
 const { title, description, lang } = Astro.props;
 
-const site = "https://maxflow.ink";
+// Absolute alternate URLs built via the i18n helper so they respect both the
+// configured `base` and the locale routing (works for root and subpath builds).
 const alternates = {
-	es: `${site}/`,
-	en: `${site}/en/`,
+	es: getAbsoluteLocaleUrl("es", "/"),
+	en: getAbsoluteLocaleUrl("en", "/"),
 } as const;
 
-// Absolute, per-page canonical URL. Falls back to the locale root when
-// Astro.url is unavailable (e.g. during certain build phases).
-const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? site).href;
-const ogImage = new URL("/me.webp", Astro.site ?? site).href;
+// Absolute, per-page canonical URL. `Astro.url.pathname` already includes the
+// baked-in `base`, so this resolves correctly under a subpath deploy.
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+// `import.meta.env.BASE_URL` is the configured base (e.g. "/" or "/portfolio/"),
+// so the OG image resolves under the base on both deploy targets.
+const ogImage = new URL(import.meta.env.BASE_URL + "me.webp", Astro.site).href;
 
 const ogLocale = lang === "es" ? "es_ES" : "en_US";
 const ogLocaleAlternate = lang === "es" ? "en_US" : "es_ES";
@@ -60,7 +64,11 @@ const personSchema = {
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href={import.meta.env.BASE_URL + "favicon.svg"}
+		/>
 		<meta name="generator" content={Astro.generator} />
 
 		{/* Canonical + hreflang */}

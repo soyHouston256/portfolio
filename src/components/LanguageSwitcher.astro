@@ -1,6 +1,7 @@
 ---
 import type { Lang } from "@/i18n/ui";
 import { getUI } from "@/i18n/ui";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 interface Props {
 	lang: Lang;
@@ -9,9 +10,11 @@ interface Props {
 const { lang } = Astro.props;
 const ui = getUI(lang);
 
+// `getRelativeLocaleUrl` respects both the configured `base` and the i18n
+// routing, so links resolve correctly on root and subpath deploys.
 const routes: Record<Lang, string> = {
-	es: "/",
-	en: "/en/",
+	es: getRelativeLocaleUrl("es", "/"),
+	en: getRelativeLocaleUrl("en", "/"),
 };
 ---
 
